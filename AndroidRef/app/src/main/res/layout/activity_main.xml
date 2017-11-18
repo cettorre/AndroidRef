@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.busko.androidref.MainActivity">
+    tools:context="com.example.busko.androidref.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <fragment
+
+        android:id="@+id/BlankFragment"
+        android:name="com.example.busko.androidref.BlankFragment"
+        android:layout="@layout/fragment_blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </fragment>
 
 
 
@@ -25,36 +38,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="1" />
+        android:text="1"
+        android:padding="1dp"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="2" />
+        android:text="2"
+        android:padding="1dp"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="3" />
+        android:text="3"
+        android:padding="1dp"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/button9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="4" />
+        android:text="4"
+        android:padding="1dp"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="5" />
+        android:text="5"
+        android:layout_margin="5dp"/>
 
     </LinearLayout>
 
-</android.support.constraint.LinearLayout>
+</LinearLayout>
