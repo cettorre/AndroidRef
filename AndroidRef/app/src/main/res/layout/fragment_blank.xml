@@ -11,12 +11,21 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="main activity"
+            android:layout_margin="5dp"
+            />
+
+        <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1"
-            android:padding="1dp"
+            android:text="chat"
+            android:layout_margin="5dp"
             />
 
         <Button
@@ -24,8 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2"
-            android:padding="1dp"
+            android:text="list"
+            android:layout_margin="5dp"
             />
 
         <Button
@@ -33,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="1dp"
+            android:layout_margin="5dp"
             android:text="3" />
 
         <Button
@@ -41,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="1dp"
+            android:layout_margin="5dp"
             android:text="4" />
 
         <Button
@@ -50,7 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="5"
-            android:padding="1dp"/>
+            android:layout_margin="5dp"
+            />
 
     </LinearLayout>
 

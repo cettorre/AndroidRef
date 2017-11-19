@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.busko.androidref.Main2Activity">
+    tools:context="com.example.busko.androidref.Main2Activity"
+    android:orientation="vertical"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <fragment
+
+        android:id="@+id/BlankFragment"
+        android:name="com.example.busko.androidref.BlankFragment"
+        android:layout="@layout/fragment_blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </fragment>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity 2"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="180dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="180dp"
+        android:textSize="40dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/messageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            />
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="enviar"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

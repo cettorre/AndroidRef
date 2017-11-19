@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="1"
+        android:text="chat"
         android:padding="1dp"
         android:layout_margin="5dp"/>
 
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="2"
+        android:text="list"
         android:padding="1dp"
         android:layout_margin="5dp"/>
 

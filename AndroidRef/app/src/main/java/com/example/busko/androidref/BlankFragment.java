@@ -1,8 +1,7 @@
 package com.example.busko.androidref;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,11 +12,7 @@ import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link BlankFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link BlankFragment#newInstance} factory method to
- * create an instance of this fragment.
+ *
  */
 public class BlankFragment extends Fragment {
 
@@ -26,6 +21,7 @@ public class BlankFragment extends Fragment {
     Button btn3=null;
     Button btn4=null;
     Button btn5=null;
+    Button btnMain=null;
 
     public BlankFragment() {
         // Required empty public constructor
@@ -42,6 +38,15 @@ public class BlankFragment extends Fragment {
         btn3=(Button)view.findViewById(R.id.button3);
         btn4=(Button)view.findViewById(R.id.button4);
         btn5=(Button)view.findViewById(R.id.button5);
+        btnMain=view.findViewById(R.id.buttonMain);
+
+        btnMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
