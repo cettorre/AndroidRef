@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.busko.androidref.Main3Activity">
+    tools:context="com.example.busko.androidref.Main3Activity"
+    android:orientation="vertical">
 
     <fragment
 
@@ -18,5 +19,33 @@
     </fragment>
 
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="232dp"
+        android:textSize="40dp"
+        />
+
+    <ListView
+        android:id="@+id/list2View"
+        android:layout_width="match_parent"
+        android:layout_height="342dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="abrirDatosWeb"
+        android:text="il fatto explicito" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="abrirNavegador"
+        android:text="navegador implicito" />
 
 </LinearLayout>
