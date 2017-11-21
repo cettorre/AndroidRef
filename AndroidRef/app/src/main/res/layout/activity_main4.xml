@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.busko.androidref.Main4Activity">
+    tools:context="com.example.busko.androidref.Main4Activity"
+    android:orientation="vertical"
+    >
 
     <fragment
 
@@ -16,6 +18,77 @@
         >
 
     </fragment>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="221dp"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News:"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="221dp"
+        android:textSize="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="abrirDatosWeb1"
+            android:text="il fatto" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="abrirDatosWeb2"
+            android:text="lavang" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="abrirDatosWeb3"
+            android:text="time" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="abrirDatosWeb4"
+            android:text="huffpost" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        />
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="150dp">
+
+
+    </ScrollView>
 
 
 </LinearLayout>

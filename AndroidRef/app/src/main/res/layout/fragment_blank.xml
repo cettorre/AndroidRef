@@ -15,8 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="main activity"
+            android:text="main"
             android:layout_margin="5dp"
+            android:textSize="10sp"
             />
 
         <Button
@@ -26,6 +27,7 @@
             android:layout_weight="1"
             android:text="chat"
             android:layout_margin="5dp"
+            android:textSize="10sp"
             />
 
         <Button
@@ -35,6 +37,7 @@
             android:layout_weight="1"
             android:text="list"
             android:layout_margin="5dp"
+            android:textSize="10sp"
             />
 
         <Button
@@ -43,7 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="3" />
+            android:text="news"
+            android:textSize="10sp"/>
 
         <Button
             android:id="@+id/button4"
@@ -51,7 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="4" />
+            android:text="4"
+            android:textSize="10sp"/>
 
         <Button
             android:id="@+id/button5"
@@ -60,7 +65,7 @@
             android:layout_weight="1"
             android:text="5"
             android:layout_margin="5dp"
-            />
+            android:textSize="10sp"/>
 
     </LinearLayout>
 
