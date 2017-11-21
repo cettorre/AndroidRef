@@ -9,13 +9,12 @@
     >
 
     <fragment
-
         android:id="@+id/BlankFragment"
         android:name="com.example.busko.androidref.BlankFragment"
         android:layout="@layout/fragment_blank"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        tools:layout="@layout/fragment_blank">
 
     </fragment>
 
@@ -49,8 +48,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="abrirDatosWeb1"
-            android:text="il fatto" />
+            android:onClick="abrirDatosWeb3"
+            android:text="time"
+            android:theme="@android:style/Theme.Black"/>
 
         <Button
             android:id="@+id/button9"
@@ -58,17 +58,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="abrirDatosWeb2"
-            android:text="lavang" />
+            android:text="lavang"
+            android:theme="@android:style/Theme.Black"/>
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="abrirDatosWeb3"
-            android:text="time" />
+            android:onClick="abrirDatosWeb1"
+            android:text="il fatto"
+            android:theme="@android:style/Theme.Black"/>
 
         <Button
+            android:theme="@android:style/Theme.Black"
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
