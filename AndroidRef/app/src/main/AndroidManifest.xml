@@ -22,7 +22,12 @@
         <activity android:name=".Main3Activity" />
         <activity android:name=".Main4Activity" />
         <activity android:name=".Main5Activity" />
-        <activity android:name=".Main6Activity"></activity>
+        <activity android:name=".Main6Activity" />
+
+        <service
+            android:name=".PlayerService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
