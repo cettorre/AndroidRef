@@ -23,6 +23,14 @@ public class BlankFragment extends Fragment {
     Button btn5=null;
     Button btnMain=null;
 
+    Button btn6=null;
+    Button btn7=null;
+    Button btn8=null;
+    Button btn9=null;
+    Button btn10=null;
+    Button btn11=null;
+
+
     public BlankFragment() {
         // Required empty public constructor
     }
@@ -33,12 +41,20 @@ public class BlankFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_blank, container, false);
-        btn1=(Button)view.findViewById(R.id.button);
-        btn2=(Button)view.findViewById(R.id.button2);
-        btn3=(Button)view.findViewById(R.id.button3);
-        btn4=(Button)view.findViewById(R.id.button4);
-        btn5=(Button)view.findViewById(R.id.button5);
-        btnMain=view.findViewById(R.id.buttonMain);
+        btn1=(Button)view.findViewById(R.id.buttonF);
+        btn2=(Button)view.findViewById(R.id.button2F);
+        btn3=(Button)view.findViewById(R.id.button3F);
+        btn4=(Button)view.findViewById(R.id.button4F);
+        btn5=(Button)view.findViewById(R.id.button5F);
+        btnMain=view.findViewById(R.id.buttonMainF);
+
+        btn6=(Button)view.findViewById(R.id.button6F);
+        btn7=(Button)view.findViewById(R.id.button7F);
+        btn8=(Button)view.findViewById(R.id.button8F);
+        btn9=(Button)view.findViewById(R.id.button9F);
+        btn10=(Button)view.findViewById(R.id.button10F);
+        btn11=(Button)view.findViewById(R.id.button11F);
+
 
         btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +102,28 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getContext(),Main6Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Main7Activity.class);
+                startActivity(i);
+            }
+        });
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {          //todo
+                Intent i = new Intent(getContext(),Main7Activity.class);
+                startActivity(i);
+            }
+        });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {            //todo
+                Intent i = new Intent(getContext(),Main7Activity.class);
                 startActivity(i);
             }
         });

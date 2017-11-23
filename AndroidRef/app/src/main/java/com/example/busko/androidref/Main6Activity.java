@@ -24,11 +24,6 @@ public class Main6Activity extends AppCompatActivity {
         //v18@3:10 antes metodo mostrarResultado() textoResultado ha sido cambiado de sitio para ser visible
         textoResultado=(TextView)findViewById(R.id.contadorPulsaciones);
 
-
-       /* TextView mitexto = new TextView(this);
-        mitexto.setText("hola alumnos que tal");
-        setContentView(mitexto);//vista che visualizara la activity
-    */
         contador=0;
         textoResultado.setText(""+contador);
 
@@ -39,9 +34,8 @@ public class Main6Activity extends AppCompatActivity {
 
     }
 
-    //evento para cerrar teclado /clase interna
-    class EventoTeclado implements TextView.OnEditorActionListener{//esta interfaz devuelve la accion del editor(en este caso teclado)
-
+    //inner class: listener para cerrar teclado
+class EventoTeclado implements TextView.OnEditorActionListener{//esta interfaz devuelve la accion del editor(en este caso teclado)
         @Override
         public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
             //si se cierra el teclado porque hemos pulsado ok  v21@9:57
@@ -72,11 +66,10 @@ public class Main6Activity extends AppCompatActivity {
             }
         }
         textoResultado.setText(""+contador);
-
     }
 
-    public void reseteaContador(View view){
 
+    public void reseteaContador(View view){
         EditText numero_reset=(EditText)findViewById(R.id.n_reseteo);
         //v18@12:40   cambiar numero que sale en pantalla con numero introducido en EditText n_reseteo
         //v18@22:40 try
@@ -85,21 +78,15 @@ public class Main6Activity extends AppCompatActivity {
         }catch (Exception e){
             contador=0;
         }
+
         numero_reset.setText("");
         textoResultado.setText(""+contador);
+
         //v20@19:00 esconder teclado despues input
         InputMethodManager miteclado=(InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
         miteclado.hideSoftInputFromWindow(numero_reset.getWindowToken(),0);//parametro 0 ocultacion directa
 
     }
-
-    /*
-    public void mostrarResultado(){
-        TextView textoResultado=(TextView)findViewById(R.id.contadorPulsaciones);
-        textoResultado.setText(""+ contador);
-    }
-    */
-
 
 
 }

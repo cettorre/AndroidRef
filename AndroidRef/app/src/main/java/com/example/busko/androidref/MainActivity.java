@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     Button btn8=null;
     Button btn9=null;
     Button btn10=null;
+    Button btn11=null;
+    Button btn12=null;
 
 
     @Override
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btn8=(Button)findViewById(R.id.button8);
         btn9=(Button)findViewById(R.id.button9);
         btn10=(Button)findViewById(R.id.button10);
+        btn11=(Button)findViewById(R.id.button11);
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,Main6Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Main7Activity.class);
                 startActivity(i);
             }
         });

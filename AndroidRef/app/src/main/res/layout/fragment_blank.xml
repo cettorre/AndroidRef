@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.busko.androidref.BlankFragment">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,55 +16,52 @@
         android:theme="@android:style/Theme.Black">
 
         <Button
-            android:id="@+id/buttonMain"
+            android:id="@+id/buttonMainF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="main"
-            android:layout_margin="5dp"
-            android:textSize="10sp"
-            />
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="chat"
-            android:layout_margin="5dp"
-            android:textSize="10sp"
-            />
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button2F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="list"
-            android:layout_margin="5dp"
-            android:textSize="10sp"
-            />
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button3F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
             android:text="news"
-            android:textSize="10sp"/>
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button4F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
             android:text="player"
-            android:textSize="10sp"/>
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/button5F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -69,5 +70,73 @@
             android:textSize="10sp" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:theme="@android:style/Theme.Black">
+
+        <Button
+            android:id="@+id/button6F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:layout_margin="5dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/button7F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:layout_margin="5dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/button8F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:layout_margin="5dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/button9F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="9"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/button10F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="10"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/button11F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="11"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
 
 </FrameLayout>
