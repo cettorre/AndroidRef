@@ -63,10 +63,10 @@
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="5"
             android:layout_margin="5dp"
-            android:textSize="10sp"/>
+            android:layout_weight="1"
+            android:text="counter"
+            android:textSize="10sp" />
 
     </LinearLayout>
 
