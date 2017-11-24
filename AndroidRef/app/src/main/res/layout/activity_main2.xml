@@ -63,6 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.75"
+            android:inputType="text"
             />
         <Button
             android:id="@+id/sendButton"
@@ -70,6 +71,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:text="enviar"
+            android:onClick="enviarMensaje"
             />
     </LinearLayout>
 

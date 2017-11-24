@@ -69,7 +69,7 @@ class EventoTeclado implements TextView.OnEditorActionListener{//esta interfaz d
     }
 
 
-    public void reseteaContador(View view){
+    public void reseteaContador(View view){//vista aunque no utilizada dentro metodo
         EditText numero_reset=(EditText)findViewById(R.id.n_reseteo);
         //v18@12:40   cambiar numero que sale en pantalla con numero introducido en EditText n_reseteo
         //v18@22:40 try
