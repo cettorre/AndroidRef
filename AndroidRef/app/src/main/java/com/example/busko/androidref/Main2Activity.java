@@ -70,6 +70,8 @@ public class Main2Activity extends AppCompatActivity {
         InputMethodManager miteclado = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         miteclado.hideSoftInputFromWindow(messageText.getWindowToken(), 0);//parametro 0 ocultacion directa
 
+        //added  android:windowSoftInputMode="adjustPan" in manifest para que el teclado no esconda el EditText
+
     }
 
 

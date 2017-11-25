@@ -27,7 +27,7 @@
         android:text="Activity 2"
         tools:layout_editor_absoluteX="184dp"
         tools:layout_editor_absoluteY="180dp"
-        android:textSize="20dp"
+        android:textSize="10dp"
         />
 
     <TextView
@@ -37,7 +37,7 @@
         android:text="Chat"
         tools:layout_editor_absoluteX="184dp"
         tools:layout_editor_absoluteY="180dp"
-        android:textSize="40dp"
+        android:textSize="20dp"
         />
 
 
@@ -57,6 +57,9 @@
         android:layout_height="0dp"
         android:layout_weight="0.10"
         android:orientation="horizontal"
+
+
+
         >
         <EditText
             android:id="@+id/messageText"
@@ -70,6 +73,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
+            android:ems="10"
             android:text="enviar"
             android:onClick="enviarMensaje"
             />
