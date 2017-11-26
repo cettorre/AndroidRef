@@ -40,7 +40,6 @@ public class ChatAdapter extends ArrayAdapter<Message> {
 
         View messageView = inflater.inflate(R.layout.message_item,parent,false);
 
-        //aterrizamos los widgets
         TextView msgView = (TextView) messageView.findViewById(R.id.txMessage);
         TextView timeView = (TextView) messageView.findViewById(R.id.txTime);
 
