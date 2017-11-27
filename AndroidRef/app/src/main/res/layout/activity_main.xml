@@ -7,6 +7,9 @@
     tools:context="com.example.busko.androidref.MainActivity"
     android:orientation="vertical"
     >
+    <include layout="@layout/tool_bar"
+        android:id="@+id/tool_bar"></include>
+
 
     <fragment
 

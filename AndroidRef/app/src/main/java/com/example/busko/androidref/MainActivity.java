@@ -3,6 +3,7 @@ package com.example.busko.androidref;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn11=null;
     Button btn12=null;
 
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         btn9=(Button)findViewById(R.id.button9);
         btn10=(Button)findViewById(R.id.button10);
         btn11=(Button)findViewById(R.id.button11);
+
+        toolbar=(Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
