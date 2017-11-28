@@ -1,9 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidRef</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-
     <string name="msgTitle">Información importante</string>
     <string name="message_info">Programador: Ciro; Fecha: 28 nov</string>
-
 </resources>

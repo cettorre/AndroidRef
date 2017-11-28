@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         int id=item.getItemId();
         if(id==R.id.config) return true;
         if(id==R.id.info){
-            Intent i = new Intent(this, Main4Activity.class);
+            Intent i = new Intent(this, InfoActivity.class);
             this.startActivity(i);
 
             return true;

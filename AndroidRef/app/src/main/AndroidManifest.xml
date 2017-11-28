@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"
-                android:windowSoftInputMode="adjustPan"
-            />
+        <activity
+            android:name=".Main2Activity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".Main3Activity" />
         <activity android:name=".Main4Activity" />
         <activity android:name=".Main5Activity" />
@@ -31,7 +31,10 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Main7Activity"></activity>
+        <activity android:name=".Main7Activity" />
+        <activity android:name=".InfoActivity"
+                   android:theme="@style/Theme.AppCompat.Dialog"
+        ></activity>
     </application>
 
 </manifest>
