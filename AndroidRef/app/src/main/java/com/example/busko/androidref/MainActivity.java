@@ -19,6 +19,14 @@ public class MainActivity extends AppCompatActivity {
     Button btn11=null;
     Button btn12=null;
 
+    Button btn6v;
+    Button btn7v=null;
+    Button btn8v=null;
+    Button btn9v=null;
+    Button btn10v=null;
+    Button btn11v=null;
+    Button btn12v=null;
+
     private Toolbar toolbar;
 
     @Override
@@ -26,15 +34,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn6=(Button)findViewById(R.id.button6);
-        btn7=(Button)findViewById(R.id.button7);
-        btn8=(Button)findViewById(R.id.button8);
-        btn9=(Button)findViewById(R.id.button9);
-        btn10=(Button)findViewById(R.id.button10);
-        btn11=(Button)findViewById(R.id.button11);
+        btn6=(Button)findViewById(R.id.button1_hscroll);
+        btn7=(Button)findViewById(R.id.button2_hscroll);
+        btn8=(Button)findViewById(R.id.button3_hscroll);
+        btn9=(Button)findViewById(R.id.button4_hscroll);
+        btn10=(Button)findViewById(R.id.button5_hscroll);
+        btn11=(Button)findViewById(R.id.button6_hscroll);
+        btn12=(Button)findViewById(R.id.button7_hscroll);
+
+        btn6v=(Button)findViewById(R.id.button1_vertical);
+        btn7v=(Button)findViewById(R.id.button2_vertical);
+        btn8v=(Button)findViewById(R.id.button3_vertical);
+        btn9v=(Button)findViewById(R.id.button4_vertical);
+        btn10v=(Button)findViewById(R.id.button5_vertical);
+        btn11v=(Button)findViewById(R.id.button6_vertical);
+        btn12v=(Button)findViewById(R.id.button7_vertical);
+
+
+
 
         toolbar=(Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
+
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +104,60 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+
+
+
+        btn6v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this , Main2Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn7v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Main3Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn8v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Main4Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn9v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Main5Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn10v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Main6Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn11v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Main7Activity.class);
+                startActivity(i);
+            }
+        });
+
 
 
     }

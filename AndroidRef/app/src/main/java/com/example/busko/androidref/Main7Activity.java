@@ -27,6 +27,7 @@ public class Main7Activity extends AppCompatActivity {
 
     }
 
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -38,6 +39,7 @@ public class Main7Activity extends AppCompatActivity {
         super.onStop();
         unregisterReceiver(onBatteryChanged);
     }
+
 
     BroadcastReceiver onBatteryChanged = new BroadcastReceiver() {
         @Override

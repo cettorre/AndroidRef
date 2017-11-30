@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:theme="@android:style/Theme.Black"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+
+        >
+
+        <Button
+            android:id="@+id/button1_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat" />
+
+        <Button
+            android:id="@+id/button2_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List" />
+        <Button
+            android:id="@+id/button3_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News" />
+        <Button
+            android:id="@+id/button4_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player" />
+        <Button
+            android:id="@+id/button5_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Counter" />
+        <Button
+            android:id="@+id/button6_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battery" />
+        <Button
+            android:id="@+id/button7_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera" />
+        <Button
+            android:id="@+id/button8_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button9_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button10_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button11_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

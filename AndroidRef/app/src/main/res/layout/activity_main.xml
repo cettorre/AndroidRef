@@ -6,11 +6,17 @@
     android:layout_height="match_parent"
     tools:context="com.example.busko.androidref.MainActivity"
     android:orientation="vertical"
+    android:background="@color/colorBlack"
     >
-    <include layout="@layout/tool_bar"
-        android:id="@+id/tool_bar"></include>
+
+    <include layout="@layout/tool_bar" android:id="@+id/tool_bar"></include>
+
+    <include layout="@layout/h_scroll_content"></include>
+
+    <include layout="@layout/content_scroll"></include>
 
 
+<!--
     <fragment
 
         android:id="@+id/BlankFragment"
@@ -21,21 +27,23 @@
         >
 
     </fragment>
-
+-->
 
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MAIN" />
+        android:text="MAIN"
+        android:background="@color/colorBlack"/>
 
 
     <LinearLayout
         android:theme="@android:style/Theme.Black"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorSecondary">
 
     <Button
         android:id="@+id/button6"
