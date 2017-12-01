@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         loadAccountData(null);
 
         //TODO
-        getPageColor();
+        getPageColor2();
     }
 
     @Override
@@ -220,7 +220,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void getPageColor(){
-        if(ConfigActivity.isGreen) pageLayout.setBackgroundColor( Color.GREEN );
+        if(ConfigActivity.isGreen) {pageLayout.setBackgroundColor( Color.GREEN );}
+        else{pageLayout.setBackgroundColor( Color.BLACK );
+
+        }
+    }
+
+    public void getPageColor2(){
+
+        SharedPreferences sharedPreferences = getSharedPreferences(getPackageName()+".my_pref_file", Context.MODE_PRIVATE);
+        boolean b= sharedPreferences.getBoolean("green",false);
+        if(b) {pageLayout.setBackgroundColor( Color.GREEN );}
+        else{pageLayout.setBackgroundColor( Color.BLACK );
+
+        }
 
     }
 

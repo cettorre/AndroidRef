@@ -40,7 +40,7 @@ public class ConfigActivity extends AppCompatActivity {
         pageColorSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                setPageColor(isChecked);
+                setPageColor2(isChecked);
             }
         });
 
@@ -48,7 +48,13 @@ public class ConfigActivity extends AppCompatActivity {
         // Load Data from Activity Level SharedPrefs
         //TODO recuperamos informacion en este caso color antes guardar ahora leer
         //                             xml accessible only to this activity
-        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+
+
+
+        //SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getSharedPreferences(getPackageName()+".my_pref_file",Context.MODE_PRIVATE);
+
+
         //constante   valor por defecto
         boolean isChecked =sharedPref.getBoolean("green",false);
         pageColorSwitch.setChecked(isChecked);
@@ -59,7 +65,9 @@ public class ConfigActivity extends AppCompatActivity {
 
         //TODO guardar preferencias color pagina disponible solo para esta activity "getPreferences" si fuera disp para otras seria getSharedPreferences
         //modo privado actividad, fichero es privado no puede ser accedido por otras applicaciones
-        SharedPreferences sharedPrefs = getSharedPreferences(getPackageName()+".my_pref_file",Context.MODE_PRIVATE);
+        //SharedPreferences sharedPrefs = getSharedPreferences(getPackageName()+".my_pref_file",Context.MODE_PRIVATE);
+        SharedPreferences sharedPrefs = getPreferences(Context.MODE_PRIVATE);
+
         //abilito que se pueda modificar que deje actualizar los datos por defecto es solo lectura
         SharedPreferences.Editor editor = sharedPrefs.edit();
         //tal como en bundle añadimos informacion dentro editor
@@ -70,14 +78,33 @@ public class ConfigActivity extends AppCompatActivity {
         pageLayout.setBackgroundColor(isChecked? Color.GREEN : Color.WHITE);
 
 
-        if(isChecked)isGreen=isChecked;
+        if(isChecked){isGreen=true;}else{isGreen=false;}
 
-        //TODO
-      /*  if(isChecked)
-            pageLayout2.setBackgroundColor(Color.GREEN);
-        //esto genera xml en tools>android>Android device monitor
-        */
     }
+     // si quieres utilizar metodo setPAgeColor(usa getPreference en lugar de getSharedPreeferences y variable static para invocar desde otra clase)
+    //hay que modificar siguientes lineas ConfigAct 43 54, MainAct 184
+    private void setPageColor2(boolean isChecked) { // Save data to Activity Level SharedPrefs
+
+        SharedPreferences sharedPrefs = getSharedPreferences(getPackageName()+".my_pref_file",Context.MODE_PRIVATE);
+        //SharedPreferences sharedPrefs = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPrefs.edit();
+        //tal como en bundle añadimos informacion dentro editor
+        editor.putBoolean("green", isChecked);
+        //para que cambios persistan
+        editor.apply();
+
+        pageLayout.setBackgroundColor(isChecked? Color.GREEN : Color.WHITE);
+
+    }
+
+
+
+
+
+
+
+
+
 
     public void saveAccountData(View view) { // Save data to Application Level SharedPrefs
 
