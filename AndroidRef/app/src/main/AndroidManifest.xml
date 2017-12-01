@@ -32,9 +32,10 @@
             android:exported="true" />
 
         <activity android:name=".Main7Activity" />
-        <activity android:name=".InfoActivity"
-                   android:theme="@style/Theme.AppCompat.Dialog"
-        ></activity>
+        <activity
+            android:name=".InfoActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".ConfigActivity"></activity>
     </application>
 
 </manifest>
