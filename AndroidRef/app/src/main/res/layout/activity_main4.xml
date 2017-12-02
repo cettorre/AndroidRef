@@ -54,11 +54,11 @@
                 android:theme="@android:style/Theme.Black" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/button9news"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="abrirDatosWeb2"
+
                 android:text="lavang"
                 android:theme="@android:style/Theme.Black" />
 

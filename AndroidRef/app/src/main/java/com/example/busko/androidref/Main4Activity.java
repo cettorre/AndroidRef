@@ -5,8 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 
 public class Main4Activity extends AppCompatActivity {
+
+    WebView wv;
+    String url;
+    Button button9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,16 +19,34 @@ public class Main4Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main4);
 
 
-        WebView wv = (WebView)findViewById(R.id.webView);
-        Intent i = getIntent();
-        String url = i.getStringExtra("data");
 
-        //cargar url dentro webview
-        wv.loadUrl(url);
+
+         wv = (WebView)findViewById(R.id.webView);
+        Intent i = getIntent();
+         url = i.getStringExtra("data");
+
+        //con este sistema actualizamos webview sin recargar la pagina y sin utilizar intent
+        button9=findViewById(R.id.button9news);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Main4Activity.this.wv.loadUrl("http://www.lavanguardia.com/");
+            }
+        });
+
+
 
         //hay que los permiso INTERNET en manifast porque. es nuestra aplicacion que abre la pagina
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        //cargar url dentro webview
+
+
+    }
 
     public void  abrirDatosWeb1(View view){
         Intent i = new Intent(this,Main4Activity.class);
@@ -31,10 +54,11 @@ public class Main4Activity extends AppCompatActivity {
         startActivity(i);
     }
     public void  abrirDatosWeb2(View view){
-        Intent i = new Intent(this,Main4Activity.class);
-        i.putExtra("data", "http://www.lavanguardia.com/");
-        startActivity(i);
+       Main4Activity.this. wv.loadUrl(url);
     }
+
+
+
     public void  abrirDatosWeb3(View view){
         Intent i = new Intent(this,Main4Activity.class);
         i.putExtra("data", "http://time.com/");
