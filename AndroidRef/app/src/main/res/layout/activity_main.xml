@@ -19,12 +19,6 @@
         android:background="@color/colorPrimary"
         android:padding="@dimen/activity_vertical_margin"/>
 
-    <include layout="@layout/h_scroll_content"></include>
-
-    <include layout="@layout/content_scroll"></include>
-
-
-<!--
     <fragment
 
         android:id="@+id/BlankFragment"
@@ -35,11 +29,7 @@
         >
 
     </fragment>
--->
 
-
-
-
-
+    <include layout="@layout/content_scroll"></include>
 
 </LinearLayout>

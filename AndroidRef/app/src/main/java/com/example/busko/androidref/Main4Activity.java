@@ -36,6 +36,8 @@ public class Main4Activity extends AppCompatActivity {
 
 
 
+
+
         //hay que los permiso INTERNET en manifast porque. es nuestra aplicacion que abre la pagina
     }
 
@@ -44,6 +46,8 @@ public class Main4Activity extends AppCompatActivity {
         super.onStart();
 
         //cargar url dentro webview
+        wv.loadUrl(url);
+
 
 
     }
@@ -54,10 +58,9 @@ public class Main4Activity extends AppCompatActivity {
         startActivity(i);
     }
     public void  abrirDatosWeb2(View view){
-       Main4Activity.this. wv.loadUrl(url);
+
+
     }
-
-
 
     public void  abrirDatosWeb3(View view){
         Intent i = new Intent(this,Main4Activity.class);
