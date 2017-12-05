@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.busko.androidref.Main8Activity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:src="@mipmap/ic_launcher"
+        />
+    <ImageButton
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:src="@android:drawable/btn_star_big_on"
+        />
+
+</LinearLayout>
