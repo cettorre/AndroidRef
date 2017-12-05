@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="abrirDatosWeb3"
-                android:text="time"
+                android:text="Time"
                 android:theme="@android:style/Theme.Black" />
 
             <Button
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
 
-                android:text="lavang"
+                android:text="La Vanguardia"
                 android:theme="@android:style/Theme.Black" />
 
             <Button
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="abrirDatosWeb1"
-                android:text="il fatto"
+                android:text="BBC"
                 android:theme="@android:style/Theme.Black" />
 
             <Button
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="abrirDatosWeb4"
-                android:text="huffpost"
+                android:text="Euronews"
                 android:theme="@android:style/Theme.Black" />
 
         </LinearLayout>

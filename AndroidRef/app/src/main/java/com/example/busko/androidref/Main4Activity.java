@@ -12,13 +12,12 @@ public class Main4Activity extends AppCompatActivity {
     WebView wv;
     String url;
     Button button9;
+    Button button10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
-
-
 
 
          wv = (WebView)findViewById(R.id.webView);
@@ -31,6 +30,14 @@ public class Main4Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Main4Activity.this.wv.loadUrl("http://www.lavanguardia.com/");
+            }
+        });
+
+        button10=findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Main4Activity.this.wv.loadUrl("http://time.com/");
             }
         });
 
@@ -54,22 +61,13 @@ public class Main4Activity extends AppCompatActivity {
 
     public void  abrirDatosWeb1(View view){
         Intent i = new Intent(this,Main4Activity.class);
-        i.putExtra("data", "http://www.ilfattoquotidiano.it/");
+        i.putExtra("data", "http://www.bbc.com/");
         startActivity(i);
     }
-    public void  abrirDatosWeb2(View view){
 
-
-    }
-
-    public void  abrirDatosWeb3(View view){
-        Intent i = new Intent(this,Main4Activity.class);
-        i.putExtra("data", "http://time.com/");
-        startActivity(i);
-    }
     public void  abrirDatosWeb4(View view){
         Intent i = new Intent(this,Main4Activity.class);
-        i.putExtra("data", "http://www.huffingtonpost.es/");
+        i.putExtra("data", "http://www.euronews.com/");
         startActivity(i);
     }
 }
