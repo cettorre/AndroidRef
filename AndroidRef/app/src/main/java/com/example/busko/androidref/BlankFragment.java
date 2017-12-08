@@ -97,6 +97,14 @@ public class BlankFragment extends Fragment {
             }
         });
 
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Main8Activity.class);
+                startActivity(i);
+            }
+        });
+
 
         return view;
     }
