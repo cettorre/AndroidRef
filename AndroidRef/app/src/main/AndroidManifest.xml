@@ -3,7 +3,7 @@
     package="com.example.busko.androidref">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -37,7 +37,8 @@
             android:name=".InfoActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".ConfigActivity" />
-        <activity android:name=".Main8Activity"></activity>
+        <activity android:name=".Main8Activity" />
+        <activity android:name=".storage.Main9Activity"></activity>
     </application>
 
 </manifest>

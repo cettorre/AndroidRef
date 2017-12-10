@@ -54,7 +54,7 @@
             android:id="@+id/button8_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="storage" />
         <Button
             android:id="@+id/button9_vertical"
             android:layout_width="match_parent"
