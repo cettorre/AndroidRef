@@ -38,7 +38,10 @@
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".ConfigActivity" />
         <activity android:name=".Main8Activity" />
-        <activity android:name=".storage.Main9Activity"></activity>
+        <activity android:name=".storage.Main9Activity" />
+        <activity android:name=".storage.CacheStorageDemo" />
+        <activity android:name=".storage.InternalStorageDemo" />
+        <activity android:name=".storage.InternalStorageDisplay"></activity>
     </application>
 
 </manifest>

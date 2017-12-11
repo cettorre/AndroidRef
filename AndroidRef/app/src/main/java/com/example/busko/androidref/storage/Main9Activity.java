@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import com.example.busko.androidref.*;
 
-import com.example.busko.androidref.R;
 
 public class Main9Activity extends AppCompatActivity {
 
@@ -21,8 +21,8 @@ public class Main9Activity extends AppCompatActivity {
 
     public void openInternalStorageDemoActivity(View view) {
 
-//        Intent intent = new Intent(this, InternalStorageDemo.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, InternalStorageDemo.class);
+        startActivity(intent);
     }
 
     public void openCacheStorageDemoActivity(View view) {
