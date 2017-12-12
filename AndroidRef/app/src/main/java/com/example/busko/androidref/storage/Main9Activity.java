@@ -27,8 +27,8 @@ public class Main9Activity extends AppCompatActivity {
 
     public void openCacheStorageDemoActivity(View view) {
 
-//        Intent intent = new Intent(this, CacheStorageDemo.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, CacheStorageDemo.class);
+        startActivity(intent);
     }
 
     public void openExternalStorageDemoActivity(View view) {
