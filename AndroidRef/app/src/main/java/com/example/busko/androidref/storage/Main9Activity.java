@@ -33,8 +33,8 @@ public class Main9Activity extends AppCompatActivity {
 
     public void openExternalStorageDemoActivity(View view) {
 
-//        Intent intent = new Intent(this, ExternalStorageDemo.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, ExternalStorageDemo.class);
+        startActivity(intent);
     }
 
 
