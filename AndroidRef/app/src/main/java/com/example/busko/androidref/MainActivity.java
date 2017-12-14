@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.busko.androidref.database.DatabaseActivity;
 import com.example.busko.androidref.storage.Main9Activity;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn11v=null;
     Button btn12v=null;
     Button btn13v=null;
+    Button btn14v=null;
 
     TextView txvName;
 
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         btn11v=(Button)findViewById(R.id.button6_vertical);
         btn12v=(Button)findViewById(R.id.button7_vertical);
         btn13v=(Button)findViewById(R.id.button8_vertical);
+        btn14v=(Button)findViewById(R.id.button9_vertical);
 
 
         btn6v.setOnClickListener(new View.OnClickListener() {
@@ -111,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,Main9Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn14v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,DatabaseActivity.class);
                 startActivity(i);
             }
         });

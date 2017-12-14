@@ -42,7 +42,8 @@
         <activity android:name=".storage.CacheStorageDemo" />
         <activity android:name=".storage.InternalStorageDemo" />
         <activity android:name=".storage.InternalStorageDisplay" />
-        <activity android:name=".storage.ExternalStorageDemo"></activity>
+        <activity android:name=".storage.ExternalStorageDemo" />
+        <activity android:name=".database.DatabaseActivity"></activity>
     </application>
 
 </manifest>

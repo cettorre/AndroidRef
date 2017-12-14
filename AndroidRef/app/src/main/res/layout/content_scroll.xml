@@ -54,12 +54,12 @@
             android:id="@+id/button8_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="storage" />
+            android:text="Storage" />
         <Button
             android:id="@+id/button9_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Database" />
         <Button
             android:id="@+id/button10_vertical"
             android:layout_width="match_parent"
