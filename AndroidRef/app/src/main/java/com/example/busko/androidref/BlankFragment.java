@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.busko.androidref.database.DatabaseActivity;
+import com.example.busko.androidref.storage.Main9Activity;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +19,7 @@ import android.widget.Button;
  */
 public class BlankFragment extends Fragment {
 
+    Button btnMain;
     Button btn6;
     Button btn7=null;
     Button btn8=null;
@@ -23,6 +27,8 @@ public class BlankFragment extends Fragment {
     Button btn10=null;
     Button btn11=null;
     Button btn12=null;
+    Button btn13=null;
+    Button btn14=null;
 
 
     public BlankFragment() {
@@ -39,6 +45,7 @@ public class BlankFragment extends Fragment {
 
         //aterrizaje buttons y eventos
 
+        btnMain=(Button)view.findViewById(R.id.buttonM_hscroll);
         btn6=(Button)view.findViewById(R.id.button1_hscroll);
         btn7=(Button)view.findViewById(R.id.button2_hscroll);
         btn8=(Button)view.findViewById(R.id.button3_hscroll);
@@ -46,8 +53,18 @@ public class BlankFragment extends Fragment {
         btn10=(Button)view.findViewById(R.id.button5_hscroll);
         btn11=(Button)view.findViewById(R.id.button6_hscroll);
         btn12=(Button)view.findViewById(R.id.button7_hscroll);
+        btn13=(Button)view.findViewById(R.id.button8_hscroll);
+        btn14=(Button)view.findViewById(R.id.button9_hscroll);
 
 
+
+        btnMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext() , MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +118,22 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getContext(),Main8Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Main9Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),DatabaseActivity.class);
                 startActivity(i);
             }
         });
