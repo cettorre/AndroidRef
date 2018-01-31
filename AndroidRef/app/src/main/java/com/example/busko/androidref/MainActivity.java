@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn12v=null;
     Button btn13v=null;
     Button btn14v=null;
+    Button btn15v=null;
 
     TextView txvName;
 
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btn12v=(Button)findViewById(R.id.button7_vertical);
         btn13v=(Button)findViewById(R.id.button8_vertical);
         btn14v=(Button)findViewById(R.id.button9_vertical);
+        btn15v=(Button)findViewById(R.id.button10_vertical);
 
 
         btn6v.setOnClickListener(new View.OnClickListener() {
@@ -122,6 +124,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,DatabaseActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn15v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Location10Activity.class);
                 startActivity(i);
             }
         });

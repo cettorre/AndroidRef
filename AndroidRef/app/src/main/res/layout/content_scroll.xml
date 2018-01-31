@@ -64,7 +64,7 @@
             android:id="@+id/button10_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Location" />
         <Button
             android:id="@+id/button11_vertical"
             android:layout_width="match_parent"
