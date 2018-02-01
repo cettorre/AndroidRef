@@ -69,6 +69,16 @@
             android:id="@+id/button11_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Dialog" />
+        <Button
+            android:id="@+id/button12_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXX" />
+        <Button
+            android:id="@+id/button13_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXX" />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
