@@ -25,7 +25,7 @@ public class AlertDialogFragment extends DialogFragment {
 
                     }
                 })
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("go home", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
                         Intent i = new Intent(getContext() , MainActivity.class);
