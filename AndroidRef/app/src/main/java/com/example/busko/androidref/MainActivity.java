@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn14v=null;
     Button btn15v=null;
     Button btn16v=null;
+    Button btn17v=null;
 
 
     TextView txvName;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         btn14v=(Button)findViewById(R.id.button9_vertical);
         btn15v=(Button)findViewById(R.id.button10_vertical);
         btn16v=(Button)findViewById(R.id.button11_vertical);
+        btn17v=(Button)findViewById(R.id.button12_vertical);
 
 
         btn6v.setOnClickListener(new View.OnClickListener() {
@@ -142,7 +144,15 @@ public class MainActivity extends AppCompatActivity {
         btn16v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,Dialog11Activity.class);
+                Intent i = new Intent(MainActivity.this, Dialog11Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn17v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,MediaPlayerActivity.class);
                 startActivity(i);
             }
         });

@@ -55,7 +55,8 @@
         <activity android:name=".storage.ExternalStorageDemo" />
         <activity android:name=".database.DatabaseActivity" />
         <activity android:name=".Location10Activity" />
-        <activity android:name=".Dialog11Activity"></activity>
+        <activity android:name=".Dialog11Activity" />
+        <activity android:name=".MediaPlayerActivity"></activity>
     </application>
 
 </manifest>

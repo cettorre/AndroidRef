@@ -72,6 +72,22 @@
         android:layout_height="match_parent"
         android:text="Database" />
 
+        <Button
+            android:id="@+id/button10_hscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Location" />
+        <Button
+            android:id="@+id/button11_hscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Dialog" />
+        <Button
+            android:id="@+id/button12_hscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MediaPlayer" />
+
 
     </LinearLayout>
 

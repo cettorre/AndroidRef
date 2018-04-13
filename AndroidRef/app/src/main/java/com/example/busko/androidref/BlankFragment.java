@@ -29,6 +29,9 @@ public class BlankFragment extends Fragment {
     Button btn12=null;
     Button btn13=null;
     Button btn14=null;
+    Button btn15=null;
+    Button btn16=null;
+    Button btn17=null;
 
 
     public BlankFragment() {
@@ -55,6 +58,9 @@ public class BlankFragment extends Fragment {
         btn12=(Button)view.findViewById(R.id.button7_hscroll);
         btn13=(Button)view.findViewById(R.id.button8_hscroll);
         btn14=(Button)view.findViewById(R.id.button9_hscroll);
+        btn15=(Button)view.findViewById(R.id.button10_hscroll);
+        btn16=(Button)view.findViewById(R.id.button11_hscroll);
+        btn17=(Button)view.findViewById(R.id.button12_hscroll);
 
 
 
@@ -134,6 +140,30 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getContext(),DatabaseActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Location10Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Dialog11Activity.class);
+                startActivity(i);
+            }
+        });
+
+        btn17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),MediaPlayerActivity.class);
                 startActivity(i);
             }
         });

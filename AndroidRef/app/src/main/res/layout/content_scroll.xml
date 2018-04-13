@@ -74,7 +74,7 @@
             android:id="@+id/button12_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="XXX" />
+            android:text="Media Player" />
         <Button
             android:id="@+id/button13_vertical"
             android:layout_width="match_parent"
