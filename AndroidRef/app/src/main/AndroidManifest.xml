@@ -30,7 +30,8 @@
         <activity
             android:name=".Main4Activity"
             android:theme="@style/Theme.AppCompat" />
-        <activity android:name=".Main5Activity" />
+        <activity android:name=".Main5Activity"
+            android:theme="@style/Theme.AppCompat"/>
         <activity
             android:name=".Main6Activity"
             android:theme="@style/Theme.AppCompat.Dialog" />
@@ -47,16 +48,23 @@
             android:name=".InfoActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".ConfigActivity" />
-        <activity android:name=".Main8Activity" />
-        <activity android:name=".storage.Main9Activity" />
-        <activity android:name=".storage.CacheStorageDemo" />
+        <activity android:name=".Main8Activity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".storage.Main9Activity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".storage.CacheStorageDemo"
+            android:theme="@style/Theme.AppCompat"/>
         <activity android:name=".storage.InternalStorageDemo" />
         <activity android:name=".storage.InternalStorageDisplay" />
         <activity android:name=".storage.ExternalStorageDemo" />
-        <activity android:name=".database.DatabaseActivity" />
+        <activity android:name=".database.DatabaseActivity"
+            android:theme="@style/Theme.AppCompat"/>
         <activity android:name=".Location10Activity" />
-        <activity android:name=".Dialog11Activity" />
-        <activity android:name=".MediaPlayerActivity"></activity>
+        <activity android:name=".Dialog11Activity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".MediaPlayerActivity"
+            android:theme="@style/Theme.AppCompat"
+            ></activity>
     </application>
 
 </manifest>
